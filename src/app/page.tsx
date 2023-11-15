@@ -4,6 +4,7 @@ import titleStyles from './styles/TitleAnimation.module.css';
 import LogoutButton from './components/LogoutButton';
 
 import { useUser } from '@auth0/nextjs-auth0/client';
+import ImageGenerator from './components/ImageGenerator';
 
 export default function Home() {
   const { user, error, isLoading } = useUser();
@@ -16,9 +17,9 @@ export default function Home() {
         <>
           <div>
             <h2>{user?.name}</h2>
-            <p>{user?.email}</p>
           </div>
           <LogoutButton/>
+          <ImageGenerator/>
         </>
       ) : (
         <LoginButton/>
