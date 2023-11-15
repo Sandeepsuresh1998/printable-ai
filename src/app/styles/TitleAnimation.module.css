@@ -1,0 +1,14 @@
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .typingTitle {
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    animation: typing 3s steps(40, end);
+  }
+  
